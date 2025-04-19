@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+{% block content%}
+<section>
+    <div class="form">
+        <a href="{% url 'home' %}"><button class="but">HOME</button></a>
+        <h2>Transfer Money</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <label>Sender Account Number:</label>
+            <input type="number" name="from_acc" required><br><br>
+
+            <label>Receiver Account Number:</label>
+            <input type="number" name="to_acc" required><br><br>
+
+            <label>Amount:</label>
+            <input type="number" name="amount" required><br><br>
+            
+            <label for="pin">Enter PIN:</label>
+            <input type="password" name="pin" required><br>
+
+            <input class="sub"  type="submit" value="Transfer">
+        </form>
+    </div>
+</section>
+{% endblock content %}

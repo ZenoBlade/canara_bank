@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+{% block content%}
+<section>
+    <div class="form">
+        <a href="{% url 'home' %}"><button class="but">HOME</button></a>
+        <h2>pin generation</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="acc_num">Account Number:</label>
+            <input type="text" name="acc_num" required><br>
+        
+            <label for="pin">Enter New PIN:</label>
+            <input type="password" name="pin" required><br>
+        
+            <label for="confirm_pin">Confirm PIN:</label>
+            <input type="password" name="confirm_pin" required><br>
+        
+            <input class="sub"  type="submit" value="Generate PIN">
+        </form>
+    </div>
+</section>
+{% endblock content %}

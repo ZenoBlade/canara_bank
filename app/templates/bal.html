@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% block content%}
+<section>
+    <div class="form">
+        <a href="{% url 'home' %}"><button class="but">HOME</button></a>
+        <h2>Check Balance</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label>Account Number:</label>
+        <input type="number" name="acc_num" required><br><br>
+        
+        <label for="pin">Enter PIN:</label>
+        <input type="password" name="pin" required><br>
+
+        <input class="sub" type="submit" value="Check Balance">
+    </form>
+    </div>
+</section>
+{% endblock content %}

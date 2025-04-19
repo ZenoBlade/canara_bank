@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sample.css' %}">
+    <style>
+        body{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    {% include 'header.html' %}
+    {% block content %}
+    {% endblock content %}
+    {% include 'footer.html' %}
+</body>
+</html>

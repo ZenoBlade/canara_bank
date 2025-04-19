@@ -1,0 +1,67 @@
+{% extends 'main.html' %}
+{% block content%}
+<section>
+    <div class="home">
+        <div class="option">
+            <div class="img-container">
+                <a href="{% url 'create' %}">
+                    <img height="200px" width="200px" src="https://cdn-icons-png.flaticon.com/512/6799/6799093.png"
+                        alt="Create">
+                </a>
+            </div>
+            <p>Create Account</p>
+        </div>
+        <div class="option">
+            <div class="img-container">
+                <a href="{% url 'pingen' %}">
+                    <img height="200px" width="200px"
+                        src="https://media.istockphoto.com/id/1013496226/vector/quick-key-logo-design-template.jpg?s=612x612&w=0&k=20&c=gyZX68nHLcTTZ8R_n3ofuD_XtUaMpJNF6MaZyZpAy-M="
+                        alt="Pin generation">
+                </a>
+                <p>Pin generation</p>
+            </div>
+        </div>
+        <div class="option">
+            <div class="img-container-y">
+                <a href="{% url 'deposit' %}">
+                    <img height="170px" width="150px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCm3DfCBXH9fMcsI5eK629IV674yFSiTDKMA&s"
+                        alt="deposit">
+                </a>
+                <p>Deposit</p>
+            </div>
+        </div>
+        <div class="option">
+            <div class="img-container">
+                <a href="{% url 'withdraw' %}">
+                    <img height="200px" width="200px"
+                        src="https://img.freepik.com/premium-vector/cash-dollar-payment-money-cash-hand-icon-gray-vector-graphics_1178600-560.jpg"
+                        alt="withdraw">
+                </a>
+            </div>
+            <p>Withdraw</p>
+        </div>
+        <div class="option">
+            <div class="img-container-x">
+                <a href="{% url 'balance' %}">
+                    <img height="140px" width="150px"
+                        src="https://icons.veryicon.com/png/o/business/official-icon-of-qianjinding-supply-chain-2/balance-10.png"
+                        alt="balance enquiry">
+                </a>
+                <p>Balance Enquiry</p>
+            </div>
+
+        </div>
+        <div class="option">
+            <div class="img-container">
+                <a href="{% url 'acctransfer' %}">
+                    <img height="200px" width="200px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh4VIEbJDnjn0O49SWLRm-zw5JiB1Cii9xUg&s"
+                        alt="Account Transfer">
+                </a>
+            </div>
+            <p>Account Transfer</p>
+        </div>
+    </div>
+</section>
+{% endblock content %}
